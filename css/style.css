@@ -7,6 +7,30 @@
   --back-color: #f5f4fa;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button{
+  cursor: pointer;
+}
+
 .list {
   list-style: none;
 }
@@ -21,6 +45,14 @@ body {
   color: #212121;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ========== COMPONENTS ========== */
 
 .logo {
@@ -30,11 +62,53 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--fon-color);
+  margin-right: 93px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* ========== /COMPONENTS ========== */
 
 /* =========== HEADER ========== */
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+margin-right: 50px;
+}
+
+.contact-list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.page-header {
+  background-color: var(--title-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
+}
 
 .studio-black {
   color: #000000;
@@ -73,8 +147,9 @@ body {
 /* ========== HERO ========== */
 
 .hero {
-  background: var(--section-color);
+  background-color: var(--section-color);
 }
+
 
 .page-title {
   font-weight: 900;
@@ -84,6 +159,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--title-color);
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-btn {
@@ -93,7 +172,6 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--title-color);
-  cursor: pointer;
   background: var(--fon-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -215,7 +293,6 @@ body {
   background: var(--back-color);
   border-radius: 4px;
   border: 0;
-  cursor: pointer;
 }
 
 .list-btn:hover,
