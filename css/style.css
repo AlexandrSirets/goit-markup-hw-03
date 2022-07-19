@@ -64,7 +64,6 @@ body {
   padding-bottom: 94px;
 }
 
-
 /* ========== COMPONENTS ========== */
 
 .logo {
@@ -202,13 +201,11 @@ body {
 
 .advanteges-item {
   display: flex;
-}
-
-.advanteges-item:not(:last-child) {
-  margin-right: 30px;
+  gap: 30px;
 }
 
 .main-title {
+  font-size: inherit;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -245,9 +242,15 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+
 /* ========== /DEVELOPMENT ========== */
 
 /* ========== TEAM ==========*/
+
+.team-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-item {
   display: flex;
@@ -266,6 +269,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-bottom: 10px;
 }
 
 .specialty {
@@ -330,6 +334,20 @@ body {
 /* ========== /FOOTER ========== */
 
 /* ========== PORTFOLIO ==========*/
+
+.button-content {
+display: flex;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.batton-content {
+display: flex;
+}
 
 .list-btn {
   font-family: "Roboto", sans-serif;
