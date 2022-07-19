@@ -2,8 +2,8 @@
   --accent-color: #212121;
   --fon-color: #2196f3;
   --section-color: #2f303a;
-  --title-color:#ffffff;
-  --contact-color:#757575;
+  --title-color: #ffffff;
+  --contact-color: #757575;
   --back-color: #f5f4fa;
 }
 
@@ -18,16 +18,23 @@ p {
 
 ul,
 ol {
-margin-top: 0;
-margin-bottom: 0;
-padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
 }
 
 img {
   display: block;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -47,11 +54,16 @@ body {
 
 .container {
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 
 /* ========== COMPONENTS ========== */
 
@@ -65,11 +77,6 @@ body {
   margin-right: 93px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* ========== /COMPONENTS ========== */
 
 /* =========== HEADER ========== */
@@ -80,7 +87,7 @@ body {
 }
 
 .menu-item:not(:last-child) {
-margin-right: 50px;
+  margin-right: 50px;
 }
 
 .contact-list:not(:last-child) {
@@ -107,7 +114,7 @@ margin-right: 50px;
   background-color: var(--title-color);
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .studio-black {
@@ -139,7 +146,7 @@ margin-right: 50px;
 }
 
 .current {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 /* =========== /HEADER ========== */
@@ -148,8 +155,9 @@ margin-right: 50px;
 
 .hero {
   background-color: var(--section-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-
 
 .page-title {
   font-weight: 900;
@@ -163,6 +171,7 @@ margin-right: 50px;
   height: 120px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .modal-btn {
@@ -176,6 +185,9 @@ margin-right: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-btn:hover,
@@ -186,6 +198,10 @@ margin-right: 50px;
 /* ========== /HERO ========== */
 
 /* ========== ADVANTAGES =========== */
+
+.advanteges-item {
+  display: flex;
+}
 
 .main-title {
   font-weight: 700;
@@ -211,11 +227,25 @@ margin-right: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--accent-color);
+  margin-bottom: 50px;
+}
+
+.development-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 /* ========== /DEVELOPMENT ========== */
 
 /* ========== TEAM ==========*/
+
+.team-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 .team {
   background: var(--back-color);
@@ -252,6 +282,8 @@ margin-right: 50px;
 
 .page-footer {
   background: var(--section-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .studio-white {
@@ -323,8 +355,8 @@ margin-right: 50px;
 }
 
 button .current {
-  color: #FFFFFF;
-  background: #2196F3;
+  color: #ffffff;
+  background: #2196f3;
 }
 
 /* ========== /PORTFOLIO ==========*/
