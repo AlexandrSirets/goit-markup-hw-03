@@ -111,8 +111,6 @@ body {
 
 .page-header {
   background-color: var(--title-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -198,6 +196,10 @@ body {
 /* ========== /HERO ========== */
 
 /* ========== ADVANTAGES =========== */
+
+.advantages {
+  padding-bottom: 0;
+}
 
 .advanteges-item {
   display: flex;
