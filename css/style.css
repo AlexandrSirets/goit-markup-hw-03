@@ -119,10 +119,13 @@ body {
 }
 
 .menu-link {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .menu-link:hover,
@@ -197,10 +200,6 @@ body {
 
 /* ========== ADVANTAGES =========== */
 
-.advantages {
-  padding-bottom: 0;
-}
-
 .advanteges-item {
   display: flex;
   gap: 30px;
@@ -228,6 +227,10 @@ body {
 /* ========== /ADVANTAGES =========== */
 
 /* ========== DEVELOPMENT ========== */
+
+.development {
+  padding-top: 0;
+}
 
 .top-title {
   font-weight: 700;
